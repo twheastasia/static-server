@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  static-server:
+    image: staticserver
+    ports:
+      - "7006:3000"
+    volumes:
+      - ./share:/home/share
+    restart: always
